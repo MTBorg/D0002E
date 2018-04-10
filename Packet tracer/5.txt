@@ -1,0 +1,10 @@
+What data can an IP Packet contain?
+...
+What is meant by the phrase "the IP packet is routed"?
+It means that the router knows where to send the packet.
+
+What is a route?
+The path from the source host to the end host.
+
+Where might things go wrong?
+The router might not be able to route the packet. Also the IP-protocol does not provide reliabe data transfer.
