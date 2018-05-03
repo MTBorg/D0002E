@@ -1,0 +1,3 @@
+Compare and contrasta the serial connection with Ethernet:
+The serial connection is in the WAN and the ethernet connection is used in the LAN. This is because
+ethernet is not able to transmit data over long distance which might occur in WANs.
