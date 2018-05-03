@@ -1,0 +1,6 @@
+Do you know the difference between a physical topology and a logical topology?
+A physical topology is the actual 
+
+How are each used?
+
+How would you view each topology in Packet Tracer?
