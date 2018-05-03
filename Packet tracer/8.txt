@@ -1,6 +1,11 @@
 Do you know the difference between a physical topology and a logical topology?
-A physical topology is the actual 
+A physical topology includes the actual physical locations of the devices
+and a logical topology is only the theoretical connections between them.   
 
 How are each used?
+Physical topology are used when propagation delays are something to consider.
+Logical topology are used when only the logic of the network is important.
 
 How would you view each topology in Packet Tracer?
+By clicking the icon in the upper-left corner.
+
