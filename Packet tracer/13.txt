@@ -3,3 +3,8 @@ Task6:
 		ID for R1: 192.168.10.5
 		ID for R2: 192.168.10.9
 		ID for R3: 192.168.10.10
+
+	Step 3:
+		ID for R1: 10.1.1.1
+		ID for R2: 10.2.2.2
+		ID for R3: 10.3.3.3
