@@ -1,0 +1,35 @@
+Task3:
+	Step 2:
+		Half of the messages reach PC1 and PC4.
+	Step 3:
+		PC1-PC2: Possible, 100% success rate (except for the first message)
+		PC1-PC3: Possible, 50% success rate
+		PC1-PC4: Not possible, 0% success rate
+		PC4-PC2: Not possible, 0% success rate
+		PC4-PC3: Possible, 50% success rate
+
+Task4:
+	Step1:
+		What entries are included in the RIP updates sent out from R3? Build update entries, routes and their costs.
+		On R2, what routes are in the RIP updates that are received from R3? The route to 172.30.0.0/16.
+
+Task6:
+	What entries are included in the RIP updates sent out from R1? It now includes the ip addresses of all the subnets.
+
+	On R2, what routes are in the RIP updates that are recieved from R1? The routes to all the subnets (172.30.100.0/24, 
+		172.30.110.0/24, 172.30.200.16/28 and 172.30.200.32/28).
+
+	Are the subnet masks now included in the routing updates? Yes, they are.
+
+Task7:
+	Step 1:
+		R2-PC1: 100%
+		R2-PC4: 100%
+
+	Step 2:
+		PC1-PC2: Possible, 100% success rate
+		PC1-PC3: Possible, 100% success rate
+		PC1-PC4: Possible, 100% success rate
+		PC4-PC2: Possible, 100% success rate
+		PC4-PC3: Possible, 100% success rate
+	
