@@ -1,0 +1,40 @@
+Task1:
+	Step 2:
+		How many subnets need to be created from the 172.20.0.0/16 network? 6
+		How many total IP addresses are required from the 172.16.0.0/16? 14348
+		What subnet mask will be used for the HQ LAN subnet? 255.255.224.0
+		What is the maximum number of host addresses that could be used on this subnet? 8190 (= 2^13 - 2)
+		What subnet mask will be used for the Branch1 LAN subnet? 255.255.240.0
+		What is the maximum number of host addresses that could be used on this subnet? 4094 (= 2^12 - 2)
+		What subnet mask will be used for the Branch2 LAN subnet?`255.255.248.0
+		What is the maximum number of host addresses that could be used on this subnet? 2046 (= 2^12 - 2)
+		What subnet mask will be used for the links between the three routers? 255.255.255.252
+		What is the maximem number of host addresses that could be used on each of theses subnets? 2 (= 2^2 - 2)
+
+	Step 3:
+		1. 172.20.0.0/13
+		2. 172.20.32.0/12
+		3. 172.20.48.0/11
+		4. 172.20.56.0/2
+		5. 172.20.56.4/2
+		6. 172.20.56.8/2
+
+Task 2:
+	1. 10.10.10.1/30
+	2. 172.20.0.1/13
+	3. 172.20.31.254/13
+	4. 172.20.32.1/12
+	5. 172.20.47.254/12
+	6. 172.20.48.1/11
+	7. 172.20.55.254/11
+	8. 172.20.56.1
+	9. 172.20.56.2
+	10. 172.20.56.5
+	11. 172.20.56.6
+	12. 172.20.56.9
+	13. 172.20.56.10
+
+Task 5:
+	Step 3:
+		
+		
