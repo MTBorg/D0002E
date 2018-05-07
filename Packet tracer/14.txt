@@ -35,6 +35,60 @@ Task 2:
 	13. 172.20.56.10
 
 Task 5:
-	Step 3:
+	Step 3: Bandwidth 64?
+	Step 4: Bandwidth 64?
+	Step 5:	Bandwidth 64?
+
+Task 7:
+	Step1:
+		What directly connected networks are present in the Branch1 routing table?
+			172.20.32.0, 172.20.56.0 and 172.20.56.8
+		What commands are required to enable OSPF and include the connected networks in the routing updates?
+			router ospf 1,
+			network 172.20.32.0 0.0.31.255 area 0
+			network 172.20.56.0 0.0.0.3 area 0
+			network 172.20.56.8 0.0.0.3 area 0
+		Are there any router interface that do not need to have OSPF updates sent out?
+			Any of those not used do not need to send out updates.
+		What command is used to disable OSPF updates on these interfaces?
+			--------
+Task 8:
+	Step1:
+		A static default route will need to be configured to send all packets with destination addresses
+		that are not in the routing table to the loopback address representing the link between
+	 	the HQ router and the ISP. What command is needed to accomplish this?
+			interface loopback1
+			ip address 10.10.10.0 255.255.255.252
+			ip route 0.0.0.0 0.0.0.0 loopback1			
+
+		What directly connected networks are present in the HQ routing table?
+			172.20.0.0
+			172.20.56.0
+			172.20.56.4
+
+		Will the networks of the HQ LAN and the links between the Branch1 and Branch2 router
+ 		need to have the subnet mask information included in the network statements?
+			Yes?
+
+		What commands are required to enable OSPF and include the connected networks in
+	 	the routing updates?
+			router ospf 1
+			network 172.20.0.0 0.0.26.255
+			network 172.20.56.0 0.0.200.255
+			network 172.20.56.4 0.0.200.251
+			
+		
+	
+		Are there any router interfaces that do not need to have OSPF updates sent out?
+			Any of those not used do not need to send out updates.
+			??
+
+		What command is used to disable OSPF updates on the interfaces?
+			??
+
+		The HQ router needs to send the default route information to the Branch1 and Branch2 routers
+		in the OSPF updates. What command is used to configure this?
+			router ospf 1
+			default-information originate	
 		
 		
