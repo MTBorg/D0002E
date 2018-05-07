@@ -125,6 +125,12 @@ Task 10:
 	What is the gateway of last resort in the routing table of the HQ router?
 		Gateway is not set (wrong?)
 	What OSPF routes are present in the routing table of the Branch2 router?
-		
+		-172.20.0.0/19 via 172.20.56.9, Serial0/0/0 (B2 to HQ LAN via serial link)
+		-172.20.32.0/20 via 172.20.56.9, Serial0/0/0 (B2 to B1 LAN via serial link)
+		-172.20.56.0/30 via 172.20.56.9, Serial0/0/0 (B2 to HQ-B1 LAN via serial link)	
  
-		
+	What is the gateway of the last resort in the routing tabele of the Branch2 router?
+		Not set (wrong?)
+
+Task 11:
+			
