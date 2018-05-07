@@ -45,20 +45,20 @@ Task 7:
 			172.20.32.0, 172.20.56.0 and 172.20.56.8
 		What commands are required to enable OSPF and include the connected networks in the routing updates?
 			router ospf 1,
-			network 172.20.32.0 0.0.31.255 area 0
+			network 172.20.32.0 0.0.15.255 area 0
 			network 172.20.56.0 0.0.0.3 area 0
 			network 172.20.56.8 0.0.0.3 area 0
 		Are there any router interface that do not need to have OSPF updates sent out?
-			Any of those not used do not need to send out updates.
+			The fastethernet interface.
 		What command is used to disable OSPF updates on these interfaces?
-			--------
+			passive-interface FastEthernet0/0
 Task 8:
 	Step1:
 		A static default route will need to be configured to send all packets with destination addresses
 		that are not in the routing table to the loopback address representing the link between
 	 	the HQ router and the ISP. What command is needed to accomplish this?
 			interface loopback1
-			ip address 10.10.10.0 255.255.255.252
+			ip address 10.10.10.1 255.255.255.252
 			ip route 0.0.0.0 0.0.0.0 loopback1			
 
 		What directly connected networks are present in the HQ routing table?
@@ -73,22 +73,58 @@ Task 8:
 		What commands are required to enable OSPF and include the connected networks in
 	 	the routing updates?
 			router ospf 1
-			network 172.20.0.0 0.0.26.255
-			network 172.20.56.0 0.0.200.255
-			network 172.20.56.4 0.0.200.251
+			network 172.20.0.0 0.0.31.255 area 0
+			network 172.20.56.0 0.0.0.3 area 0
+			network 172.20.56.4 0.0.0.3 area 0
 			
 		
 	
 		Are there any router interfaces that do not need to have OSPF updates sent out?
-			Any of those not used do not need to send out updates.
-			??
+			The fastethernet interface
 
 		What command is used to disable OSPF updates on the interfaces?
-			??
+			passive-interface FastEthernet0/0
 
 		The HQ router needs to send the default route information to the Branch1 and Branch2 routers
 		in the OSPF updates. What command is used to configure this?
 			router ospf 1
-			default-information originate	
+			default-information originate
+	
+Task 9:
+	Step 1:
+		What directly connected networks are present in the Branch2 routing table?
+			172.20.48.0
+			172.20.56.4
+			172.20.56.8
 		
+		What commands are required to enable OSPF and include the connected networks in the
+		routing updates?
+			router ospf 1
+			network 172.20.48.0 0.0.7.255 area 0
+			network 172.20.56.0 0.0.0.3 area 0
+			network 172.20.56.8 0.0.0.3 area 0
+
+
+		Are there any router interfaces that do not need to have OSPF updates sent out?
+			The fastethernet interface
+
+		What command is used to disable OSPF updates on these interfaces?
+			passive-interface FastEthernet0/0
+
+Task 10:
+	What OSPF routes are present in the routing table of the Branch1 router?
+		-172.20.0.0/19 via 172.20.56.1, Serial0/0/0 (Branch1 to HQ LAN via HQ-B1 serial link)
+		-172.20.48.0/21 via 172.20.56.10, Serial0/0/1 (Branch1 to Branch2 LAN via serial link)
+		-172.20.56.4 via 172.20.56.1, Serial0/0/0 (Branch1 to HQ-B1 link via serial link)
+	What is the gateway of last resort in the routing table of the Branch1 router?
+		Gateway not set (wrong?)
+	What OSPF routes are present in the routing table of the HQ router?
+		-172.20.32.0/20 via 172.20.56.2, Serial0/0/0 (HQ to B1 LAN via serial link)
+		-172.20.48.0/21 via 172.20.56.2, Serial0/0/0 (HQ to B2 LAN via serial link)
+		-172.20.56.8 via 172.20.56.2, Serial0/0/0 (HQ to B1-B2 link via serial link)¨
+	What is the gateway of last resort in the routing table of the HQ router?
+		Gateway is not set (wrong?)
+	What OSPF routes are present in the routing table of the Branch2 router?
+		
+ 
 		
