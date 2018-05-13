@@ -117,20 +117,24 @@ Task 10:
 		-172.20.48.0/21 via 172.20.56.10, Serial0/0/1 (Branch1 to Branch2 LAN via serial link)
 		-172.20.56.4 via 172.20.56.1, Serial0/0/0 (Branch1 to HQ-B1 link via serial link)
 	What is the gateway of last resort in the routing table of the Branch1 router?
-		Gateway not set (wrong?)
+		172.20.56.1 to network 0.0.0.0
 	What OSPF routes are present in the routing table of the HQ router?
 		-172.20.32.0/20 via 172.20.56.2, Serial0/0/0 (HQ to B1 LAN via serial link)
 		-172.20.48.0/21 via 172.20.56.2, Serial0/0/0 (HQ to B2 LAN via serial link)
 		-172.20.56.8 via 172.20.56.2, Serial0/0/0 (HQ to B1-B2 link via serial link)¨
 	What is the gateway of last resort in the routing table of the HQ router?
-		Gateway is not set (wrong?)
+		0.0.0.0 to network 0.0.0.0
 	What OSPF routes are present in the routing table of the Branch2 router?
 		-172.20.0.0/19 via 172.20.56.9, Serial0/0/0 (B2 to HQ LAN via serial link)
 		-172.20.32.0/20 via 172.20.56.9, Serial0/0/0 (B2 to B1 LAN via serial link)
 		-172.20.56.0/30 via 172.20.56.9, Serial0/0/0 (B2 to HQ-B1 LAN via serial link)	
- 
 	What is the gateway of the last resort in the routing tabele of the Branch2 router?
-		Not set (wrong?)
+		172.20.56.9 to network 0.0.0.0
 
 Task 11:
-			
+	What are the hops in the route to PC3?			
+		1. Branch1 router 172.20.32.1
+		2. Branch2 router 172.20.56.10
+		3. PC3 172.20.55.254
+	Is the least number of hops that can be used to reach PC3?
+		Yes.
