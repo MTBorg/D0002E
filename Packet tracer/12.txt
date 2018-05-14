@@ -11,10 +11,12 @@ Task3:
 Task4:
 	Step1:
 		What entries are included in the RIP updates sent out from R3? Build update entries, routes and their costs.
+		
 		On R2, what routes are in the RIP updates that are received from R3? The route to 172.30.0.0/16.
 
 Task6:
-	What entries are included in the RIP updates sent out from R1? It now includes the ip addresses of all the subnets.
+	What entries are included in the RIP updates sent out from R1? It now includes the ip addresses of all the subnets,
+		as well as the entries mentioned in Task 4 step 1.
 
 	On R2, what routes are in the RIP updates that are recieved from R1? The routes to all the subnets (172.30.100.0/24, 
 		172.30.110.0/24, 172.30.200.16/28 and 172.30.200.32/28).
@@ -23,8 +25,8 @@ Task6:
 
 Task7:
 	Step 1:
-		R2-PC1: 100%
-		R2-PC4: 100%
+		R2-PC1: 100% (except for the first)
+		R2-PC4: 100% (except for the first)
 
 	Step 2:
 		PC1-PC2: Possible, 100% success rate
